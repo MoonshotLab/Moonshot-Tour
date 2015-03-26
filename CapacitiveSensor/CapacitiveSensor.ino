@@ -12,7 +12,7 @@ void setup()
   
   // use a 3 second calibration
   for(int i=0; i<sizeof(proximitySensors); i++){
-    proximitySensors[i].set_CS_AutocaL_Millis(3000);
+    proximitySensors[i].set_CS_AutocaL_Millis(0xFFFFFFFF);
   } 
 }
 
