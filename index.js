@@ -22,3 +22,7 @@ arduino.on('tap', function(data){
   lookupData.value = data.value;
   io.sockets.emit('tap', lookupData);
 });
+
+arduino.on('debug', function(data){
+  io.sockets.emit('debug', data);
+});
