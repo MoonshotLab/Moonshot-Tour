@@ -2,6 +2,8 @@ var socket = io();
 var $pins = {};
 
 socket.on('debug', function(e){
+  var color = 'rgb(' + e.value + ', 0, 0)';
+  $pins[e.pin].css({'backgroundColor' : color });
   $pins[e.pin].text(e.value);
 });
 
